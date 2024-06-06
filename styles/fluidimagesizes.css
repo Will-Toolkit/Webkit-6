@@ -1,0 +1,12 @@
+.img-small, .img-medium, .img-large {
+    height: auto;
+}
+.img-small {
+    width: ##imgsmall##%;
+}
+.img-medium {
+    width: ##imgmedium##%;
+}
+.img-large {
+    width: ##imglarge##%;
+}

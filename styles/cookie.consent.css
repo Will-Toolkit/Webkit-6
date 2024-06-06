@@ -1,0 +1,144 @@
+﻿#cc-container
+{
+    top: 0px;
+    display: block;
+    left: 0;
+    position: fixed;
+    width: 100%;
+    z-index: 999999999;
+}
+
+.cc-header-span
+{
+    vertical-align: middle;
+    position: relative;
+    display: inline-block;
+    font-size: 14px;
+    font-family: 'Open Sans',Arial,Helvetica,sans-serif;
+    white-space: normal;
+    word-wrap: break-word;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+#cc-header
+{
+    height: auto;
+    min-height: 25px;
+    cursor: pointer;
+    position: relative;
+    vertical-align: middle;
+    white-space: nowrap;
+    margin: 0 0 0 0;
+    padding: 7px 0 3px 0;
+    text-align: center;
+    display: block;
+    background-color: #c4c4c4;
+    
+    /* Theoretically for IE 8 & 9 (more valid) */	
+	/* ...but not required as filter works too */
+	/* should come BEFORE filter */
+	-ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=80)";
+	
+	/* This works in IE 8 & 9 too */
+	/* ... but also 5, 6, 7 */
+	filter: alpha(opacity=80);
+	
+	/* Older than Firefox 0.9 */
+	-moz-opacity:0.8;
+	
+	/* Safari 1.x (pre WebKit!) */
+	-khtml-opacity: 0.8;
+    
+	/* Modern!
+	/* Firefox 0.9+, Safari 2?, Chrome any?
+	/* Opera 9+, IE 9+ */
+	opacity: 0.8;
+}
+
+#cc-close
+{
+    position: relative;
+    top: 0px;
+    margin-left: 5px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    display: inline;
+    color: #ffffff !important;
+    padding: 3px 8px !important;
+    background-color: #888888 !important;
+}
+
+#cc-close:hover, #cc-close:active
+{
+    background-color: #909090 !important;
+    color: #000000 !important;
+}
+
+.cc-button
+{
+    font-size: 14px;
+    font-family: 'Open Sans' , Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    background-color: #888888 !important;
+    color: #111 !important;
+    clear: both !important;
+    text-decoration: none !important;
+    border-radius: 3px !important;
+    -moz-border-radius: 3px !important;
+    -webkit-border-radius: 3px !important;
+}
+
+a.cc-link, a.cc-link:link, a.cc-link:visited, a.cc-link:active
+{
+    margin: 0 !important;
+    position: relative !important;
+    cursor: pointer;
+    font-size: 14px;
+    font-family: 'Open Sans' , Arial, Helvetica, sans-serif;
+    color: #000000 !important;
+    overflow: hidden;
+    text-decoration: underline;
+}
+
+a.cc-link:hover
+{
+    text-decoration: underline;
+}
+
+.cc-browser-block-item div.cc-logo
+{
+    background: url('[@VirtualPathSource]images/css/browser-logos-sprite-2.jpg');
+    position: relative;
+    top: 4px;
+    right: 10px;
+    height: 60px;
+    width: 60px;
+    overflow: hidden;
+    float: right;
+}
+.cc-browser-block-item
+{
+    /* display: inline-block; NOTE: Not IE6 safe.*/
+    background-image: -webkit-gradient(linear, left top, left bottom, from( #F8F8F8), to( #FFFFFF));
+    background-image: -webkit-linear-gradient( #F8F8F8 , #FFFFFF );
+    background-image: -moz-linear-gradient( #F8F8F8 , #FFFFFF );
+    background-image: -ms-linear-gradient( #F8F8F8 , #FFFFFF );
+    background-image: -o-linear-gradient( #F8F8F8, #FFFFFF );
+    background-image: linear-gradient( #F8F8F8 , #FFFFFF);
+    border: solid 1px #F0F0F0;
+    margin: 0;
+    vertical-align: top;
+    padding: 16px;
+    padding-top: 0px;
+    height: 158px;
+}
+
+.cc-browser-block-item ol
+{
+    margin-left: 20px;
+}
+.cc-browser-block-item ol li
+{
+    list-style-type: disc;
+}

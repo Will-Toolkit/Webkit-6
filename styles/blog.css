@@ -1,0 +1,108 @@
+/***** TEST3 *****/
+
+.post-outer, .sidebar {
+    margin-top: 10px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.15);
+    margin-bottom: 30px;
+    padding: 15px;
+}
+
+.post-header {
+    color: #ad2126;
+    text-decoration: none;
+    margin: 0 0 30px;
+}
+
+.post-header h1 {
+    display: inline;
+}
+
+.post-header h2 {
+    display: inline;
+}
+
+.post-header h3{    
+    margin: 10px 0 0;
+    float: right;
+}
+
+.post-body {
+    line-height: 20px;
+}
+
+.post-body > div > .summary {
+    min-height: 160px;
+}
+
+.post-body .btn {
+    float: right;
+}
+
+.post-thumb.img-responsive {
+    float: left;
+    max-height: 200px;
+    max-width: 300px;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    margin: 0 15px 15px 0;
+}
+
+.post-thumb.img-responsive img {
+    width: 100%;
+}
+
+.img-small, .img-large {
+    width: 100%;
+}
+
+.post-body span.post-thumb.img-responsive > img {
+    display: block;
+}
+
+.post-body > .separator {
+    clear: both;
+    text-align: center;
+}
+
+.post-body > .separator > a > img {
+    border: 0;
+    max-width: 100%;
+}
+
+.blogArchive {
+    text-rendering: optimizelegibility;
+}
+
+.blogArchive li label {
+    font-weight: normal;
+}
+
+.blogArchive li a, .blogArchive li label {
+    color: #333;
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-size: 14px;
+}
+
+.blogArchive li a:hover, .blogArchive li label:hover {
+    color: blue;
+}
+
+#twitter-widget-0 {
+    width: 264px;
+}
+
+.page-numbers {
+    padding: 0 3px;
+}
+
+.pager {
+    padding: 0 0 15px 15px;
+}
+
+#blog-container {
+    margin: auto;
+    max-width: 1170px;
+}
