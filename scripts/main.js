@@ -709,5 +709,11 @@ document.addEventListener('DOMContentLoaded', () => {
       });
     });
   });
-  
+
 /* Custom Accordions End */
+
+/* Lazy Load Activation Start */
+window.addEventListener('load', function() {
+  if (typeof($.Lazy) === 'function') $('.lazy').Lazy();
+});
+/* Lazy Load Activation Start */
