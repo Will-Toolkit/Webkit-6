@@ -1,123 +1,160 @@
 .menuitem {
-    position: relative;
+  position: relative;
 }
-a.menulink, a.menulink:link, a.menulink:active, a.menulink:visited {
-    text-decoration: @MenuDecoration;
-    display: block;
+a.menulink,
+a.menulink:link,
+a.menulink:active,
+a.menulink:visited {
+  text-decoration: @MenuDecoration;
+  display: block;
 }
-    a.menulink:hover {
-        color: @MenuHoverColor;
-    }
-    .submenuitem {
-        left: 0;
-    }    
-    .submenuitem3rd {
-        left: 0;
-    }    
-    a.submenulink, a.submenulink:link, a.submenulink:active, a.submenulink:visited {
-        display: block;
-    }
+a.menulink:hover {
+  color: @MenuHoverColor;
+}
+.submenuitem {
+  left: 0;
+}
+.submenuitem3rd {
+  left: 0;
+}
+a.submenulink,
+a.submenulink:link,
+a.submenulink:active,
+a.submenulink:visited {
+  display: block;
+}
 
 #footer {
-    height: [@FooterHeight];
-    font-weight: normal;
-    font-size: @FooterLinkFSize;
-    font-family: @FooterLinkFFamily;
-    color: @FooterColor;
+  height: [ @FooterHeight];
+  font-weight: normal;
+  font-size: @FooterLinkFSize;
+  font-family: @FooterLinkFFamily;
+  color: @FooterColor;
 }
-#footer a:link, #footer a:visited, #footer a:active {
-    font-family: @FooterLinkFFamily;
-    font-size: @FooterLinkFSize;
-    line-height: @FooterLinkFLineHeight;
-    color: @FooterALinkColor;
-    text-decoration: none;
+#footer a:link,
+#footer a:visited,
+#footer a:active {
+  font-family: @FooterLinkFFamily;
+  font-size: @FooterLinkFSize;
+  line-height: @FooterLinkFLineHeight;
+  color: @FooterALinkColor;
+  text-decoration: none;
 }
 #footer a:hover {
-    text-decoration: underline;
-    font-family: @FooterLinkFFamily;
-    font-size: @FooterLinkFSize;
-    color: @FooterAHoverColor;
+  text-decoration: underline;
+  font-family: @FooterLinkFFamily;
+  font-size: @FooterLinkFSize;
+  color: @FooterAHoverColor;
 }
 .lefttext {
-    float: left;
-    padding: 4px 20px 0px 20px;
+  float: left;
+  padding: 4px 20px 0px 20px;
 }
 .righttext {
-    float: right;
-    padding: 4px 20px 0px 20px;
-}  
+  float: right;
+  padding: 4px 20px 0px 20px;
+}
 #secondfooter {
-    font-weight: normal;
-    font-size: @SecondFooterLinkFSize;
-    line-height: @SecondFooterLinkFLineHeight;
-    height: 37px;
-    font-family: @SecondFooterLinkFFamily;
-    background-image: [@2ndfooter_img];
-    background-position: [@2ndfooter_pos];
-    color: @SecondFooterColor;
-}  
-#secondfooter a:link, #secondfooter a:visited, #secondfooter a:active {
-    line-height: @SecondFooterLinkFLineHeight;
-    text-decoration: none;
-    font-family: @SecondFooterLinkFFamily;
-    font-size: @SecondFooterLinkFSize;
-    color: @SecondFooterALinkColor;
+  font-weight: normal;
+  font-size: @SecondFooterLinkFSize;
+  line-height: @SecondFooterLinkFLineHeight;
+  height: 37px;
+  font-family: @SecondFooterLinkFFamily;
+  background-image: [ @2ndfooter_img];
+  background-position: [ @2ndfooter_pos];
+  color: @SecondFooterColor;
+}
+#secondfooter a:link,
+#secondfooter a:visited,
+#secondfooter a:active {
+  line-height: @SecondFooterLinkFLineHeight;
+  text-decoration: none;
+  font-family: @SecondFooterLinkFFamily;
+  font-size: @SecondFooterLinkFSize;
+  color: @SecondFooterALinkColor;
 }
 #secondfooter a:hover {
-    line-height: @SecondFooterLinkFLineHeight;
-    text-decoration: underline;
-    font-size: @SecondFooterLinkFSize;
-    font-family: @SecondFooterLinkFFamily;
-    color: @SecondFooterAHoverColor;
+  line-height: @SecondFooterLinkFLineHeight;
+  text-decoration: underline;
+  font-size: @SecondFooterLinkFSize;
+  font-family: @SecondFooterLinkFFamily;
+  color: @SecondFooterAHoverColor;
 }
 
 .MainTable {
-    border-collapse: collapse; /* 'cellspacing' equivalent */
-    width: 100%;
+  border-collapse: collapse; /* 'cellspacing' equivalent */
+  width: 100%;
 }
-    .MainTable td, table.MainTable td {
-        padding: 0px; /* 'cellpadding' equivalent */
-    }
-    .MainTableGallery td, table.MainTableGallery td {
-        padding: 0px; /* 'cellpadding' equivalent */
-    }
+.MainTable td,
+table.MainTable td {
+  padding: 0px; /* 'cellpadding' equivalent */
+}
+.MainTableGallery td,
+table.MainTableGallery td {
+  padding: 0px; /* 'cellpadding' equivalent */
+}
 
 .gallerycontainer {
-    position: relative;
-    width: 100%;
+  position: relative;
+  width: 100%;
 }
-    .gallerycontainer ul {
-        clear: both;
-        padding: 1em 0;
-        list-style: none outside none;
-        margin-bottom: 20px;
-    }
-        .gallerycontainer ul li {
-            float: left;
-            text-align: center;
-            line-height: 18px;
-            width: 300px;
-        }
+.gallerycontainer ul {
+  clear: both;
+  padding: 1em 0;
+  list-style: none outside none;
+  margin-bottom: 20px;
+}
+.gallerycontainer ul li {
+  float: left;
+  text-align: center;
+  line-height: 18px;
+  width: 300px;
+}
 .gallerycontainer li:nth-child(n) {
-    margin: 0 0px 15px 0px;
-    width: 33.3%;
+  margin: 0 0px 15px 0px;
+  width: 33.3%;
 }
 .gallerycontainer li:nth-child(3n) {
-    margin-right: 0;
-    margin-bottom: 15px;
+  margin-right: 0;
+  margin-bottom: 15px;
 }
 .gallerypaging {
-    display: inline;
-    float: left;
-    text-align: left;
-    width: 100%;
+  display: inline;
+  float: left;
+  text-align: left;
+  width: 100%;
 }
 .gallerytext {
-    text-align: left;
+  text-align: left;
 }
 
 /***** Expanding boxes css *****/
 
 .expand-content p {
-	margin-top: 0;
+  margin-top: 0;
 }
+
+/* Custom Accordions Start */
+
+.accordion-wrapper .accordion-content-wrapper {
+  display: grid;
+  grid-template-rows: 0fr;
+  transition: all 0.25s ease-in-out;
+}
+.accordion-wrapper.accordion-active .accordion-content-wrapper {
+  grid-template-rows: 1fr;
+}
+.accordion-wrapper .accordion-content-wrapper .accordion-content {
+  overflow: hidden;
+}
+.accordion-wrapper .accordion-symbols > :last-child {
+  display: none;
+}
+.accordion-wrapper.accordion-active .accordion-symbols > :first-child {
+  display: none;
+}
+.accordion-wrapper.accordion-active .accordion-symbols > :last-child {
+  display: initial;
+}
+
+/* Custom Accordions End */
